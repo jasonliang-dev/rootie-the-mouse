@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_3
+      name: vert_top
       rect:
         serializedVersion: 2
         x: 64
@@ -177,7 +177,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_13
+      name: vert_mid
       rect:
         serializedVersion: 2
         x: 64
@@ -387,7 +387,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 2, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -588,7 +588,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_23
+      name: vert_bot
       rect:
         serializedVersion: 2
         x: 64
@@ -597,7 +597,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -756,7 +756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_31
+      name: hori_left
       rect:
         serializedVersion: 2
         x: 16
@@ -765,7 +765,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -777,7 +777,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_32
+      name: hori_mid
       rect:
         serializedVersion: 2
         x: 32
@@ -786,7 +786,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 2, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -798,7 +798,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_33
+      name: hori_right
       rect:
         serializedVersion: 2
         x: 48
@@ -807,7 +807,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -819,7 +819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_34
+      name: nothign
       rect:
         serializedVersion: 2
         x: 64
@@ -828,7 +828,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1105,33 +1105,37 @@ TextureImporter:
       cave_fullRockTile_39: -474938738
       3: -328345112
       cave_fullRockTile_24: -1154032616
-      cave_fullRockTile_31: -552145040
+      vert_mid: -565223889
       cave_fullRockTile_41: -1805013101
       cave_fullRockTile_27: 1256172500
       cave_fullRockTile_25: 1126230994
       cave_fullRockTile_46: 500838525
       cave_fullRockTile_38: 1258992834
       cave_fullRockTile_37: -1411289929
+      nothign: 1824951518
       cave_fullRockTile_36: 2071807073
       6: 1967913024
       cave_fullRockTile_19: 766531233
+      hori_mid: -1561358332
       cave_fullRockTile_16: -184031657
       cave_fullRockTile_26: -2048544087
       cave_fullRockTile_5: 426723354
       cave_fullRockTile_43: -1706788930
       5: -489278408
+      vert_bot: 294920099
       cave_fullRockTile_6: 593245484
       cave_fullRockTile_29: 844382915
-      cave_fullRockTile_3: 1306932485
       cave_fullRockTile_8: 852606104
+      hori_left: -552145040
       cave_fullRockTile_7: 587641550
       cave_fullRockTile_14: -1783378075
       8: 1756684624
       cave_fullRockTile_45: 441996296
+      hori_right: -1280655557
+      vert_top: 1306932485
       cave_fullRockTile_35: 532229833
       cave_fullRockTile_17: -1440356412
       cave_fullRockTile_44: -1553688714
-      cave_fullRockTile_13: -565223889
       2: -1246550877
       9: -1204863590
       4: 1266203168
@@ -1139,14 +1143,10 @@ TextureImporter:
       cave_fullRockTile_42: 1424598026
       cave_fullRockTile_9: -1097696459
       cave_fullRockTile_15: 1583583
-      cave_fullRockTile_33: -1280655557
-      cave_fullRockTile_23: 294920099
       1: -343037234
       7: -1840261913
-      cave_fullRockTile_32: -1561358332
       cave_fullRockTile_18: 1684050899
       cave_fullRockTile_4: 1531850409
-      cave_fullRockTile_34: 1824951518
       cave_fullRockTile_28: -418973616
       cave_fullRockTile_40: 1789257086
   spritePackingTag: 
