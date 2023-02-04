@@ -5,12 +5,16 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     public Transform m_player;
+    public float m_blend1 = 0.85f;
+    public float m_blend2 = 30.0f;
 
     void Update()
     {
         var x = m_player.position.x;
         var y = m_player.position.y;
         var z = transform.position.z;
-        transform.position = Vector3.Lerp(transform.position, new Vector3(x, y, z), Time.deltaTime);
+
+        var blend = 1 - Mathf.Pow(m_blend1, Time.deltaTime * m_blend2);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(x, y, z), blend);
     }
 }
