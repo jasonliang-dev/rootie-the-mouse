@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9e04538bd4766e94a8f2b29eaf007b49
+guid: 8f2576cae8a94954689d7c6057a2c087
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,9 +47,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -101,11 +101,23 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1
+      name: cave_halfRockTile_0
       rect:
         serializedVersion: 2
         x: 16
@@ -113,20 +125,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 0, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bc74b5706ac1994cbc03848798ae3e3
-      internalID: -343037234
+      spriteID: 9e5924fb9e7413a49bd9697b893c53d9
+      internalID: -1075397463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2
+      name: cave_halfRockTile_1
       rect:
         serializedVersion: 2
         x: 32
@@ -134,20 +146,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 695a4ed47d3707a4896aea80ae92d065
-      internalID: -1246550877
+      spriteID: c2d2685360abde44d9da7357d4e128da
+      internalID: -648986770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3
+      name: cave_halfRockTile_2
       rect:
         serializedVersion: 2
         x: 48
@@ -155,20 +167,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 2, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d918af02bbb5e3446b42393b49315782
-      internalID: -328345112
+      spriteID: 31b340e9fe3587d41a0135838705d116
+      internalID: -1014997827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vert_top
+      name: cave_halfRockTile_3
       rect:
         serializedVersion: 2
         x: 64
@@ -176,20 +188,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 2, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19d3e62b07cc1534cb1452b64f276d39
-      internalID: 1306932485
+      spriteID: 7f06b9e3f8c853043bdc37d10c5f17f1
+      internalID: 1552905499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_4
+      name: cave_halfRockTile_4
       rect:
         serializedVersion: 2
         x: 80
@@ -197,20 +209,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a04a551bd0f2d74f99090f8cf36d260
-      internalID: 1531850409
+      spriteID: 7889608fa53f8b64a96966cc25d0d6d1
+      internalID: -1416623623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_5
+      name: cave_halfRockTile_5
       rect:
         serializedVersion: 2
         x: 96
@@ -218,20 +230,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a478b5b537c56146b7db25a97aa1948
-      internalID: 426723354
+      spriteID: 1845708db7c7451448c924f94b3b2de9
+      internalID: 1033690246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_6
+      name: cave_halfRockTile_6
       rect:
         serializedVersion: 2
         x: 112
@@ -239,20 +251,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4028b552bfe088549ab27018e862a7a4
-      internalID: 593245484
+      spriteID: 351a70df078317549826577e0f0df7d2
+      internalID: 1887225370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_7
+      name: cave_halfRockTile_7
       rect:
         serializedVersion: 2
         x: 128
@@ -260,20 +272,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d9f546af0082bf4785e821666fef87c
-      internalID: 587641550
+      spriteID: d66e5f96ebe97c04792692e4d5d5f406
+      internalID: -1737505295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_8
+      name: cave_halfRockTile_8
       rect:
         serializedVersion: 2
         x: 144
@@ -281,20 +293,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd0326d9a30b7604fbbbc508e56acb54
-      internalID: 852606104
+      spriteID: 5e44c9c158e9e5d489e3108f69916e3e
+      internalID: -246252342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_9
+      name: cave_halfRockTile_9
       rect:
         serializedVersion: 2
         x: 160
@@ -302,20 +314,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2ce3e9541688954ba268bcb4abe3529
-      internalID: -1097696459
+      spriteID: 93e87210fd445414c9aa9982eecd8b65
+      internalID: -1930934792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4
+      name: cave_halfRockTile_10
       rect:
         serializedVersion: 2
         x: 16
@@ -323,20 +335,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49825001c5a74484293c943924ca090a
-      internalID: 1266203168
+      spriteID: 17a91947ce499fa4b8529f917f806c91
+      internalID: -1084092311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5
+      name: cave_halfRockTile_11
       rect:
         serializedVersion: 2
         x: 32
@@ -344,20 +356,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdc0e72170057e1489cb802449bacfae
-      internalID: -489278408
+      spriteID: b903f023a9159704caa00c4c8970d79b
+      internalID: -896721327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6
+      name: cave_halfRockTile_12
       rect:
         serializedVersion: 2
         x: 48
@@ -365,20 +377,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 2, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b198713ded6fb0b4f98db443aa00d154
-      internalID: 1967913024
+      spriteID: a4bb9e968d726b94b8d5b1df2f124157
+      internalID: -2011312521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vert_mid
+      name: cave_halfRockTile_13
       rect:
         serializedVersion: 2
         x: 64
@@ -386,20 +398,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 2, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d6d3492f5fba614bb8976d3777a7c43
-      internalID: -565223889
+      spriteID: 002a5fa4519f0e14aafcea36e89f9e3c
+      internalID: -9569551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_14
+      name: cave_halfRockTile_14
       rect:
         serializedVersion: 2
         x: 80
@@ -407,20 +419,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4f4ec8b32026254ebf5c3a6364c4dd1
-      internalID: -1783378075
+      spriteID: 0f7628660c9d33942aad662cbc0e89d8
+      internalID: -484046175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_15
+      name: cave_halfRockTile_15
       rect:
         serializedVersion: 2
         x: 96
@@ -428,20 +440,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eda0c048d5aee644baa50b30b333baad
-      internalID: 1583583
+      spriteID: 0e8a594848cba5749ad69e014c04e8ae
+      internalID: 1159439197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_16
+      name: cave_halfRockTile_16
       rect:
         serializedVersion: 2
         x: 112
@@ -449,20 +461,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8560b94b8b287aa40b9877657e7a811e
-      internalID: -184031657
+      spriteID: 888b7a5299631ec49bfbf4c29bfccd2b
+      internalID: -1890390259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_17
+      name: cave_halfRockTile_17
       rect:
         serializedVersion: 2
         x: 128
@@ -470,20 +482,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84b5b0295ff454b418bb3d1dc9ca300c
-      internalID: -1440356412
+      spriteID: 5c9ca04de6e985d43b4b39d41ff249c8
+      internalID: -631631583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_18
+      name: cave_halfRockTile_18
       rect:
         serializedVersion: 2
         x: 144
@@ -491,20 +503,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d9b70bf46266944bdaa673f9cfb737
-      internalID: 1684050899
+      spriteID: cb98aac291664e34489bc4a663114cef
+      internalID: 509205031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_19
+      name: cave_halfRockTile_19
       rect:
         serializedVersion: 2
         x: 160
@@ -512,20 +524,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8e0e0d94a97b6a44858c602e0fdb433
-      internalID: 766531233
+      spriteID: 39583434b1a23164ba5b8a4a62c5d344
+      internalID: -926648115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7
+      name: cave_halfRockTile_20
       rect:
         serializedVersion: 2
         x: 16
@@ -533,20 +545,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33fdefde73a81284ca8c242db7b998eb
-      internalID: -1840261913
+      spriteID: 03b6f8de116eb6f4294d0549cfb5a6ca
+      internalID: 1553006479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8
+      name: cave_halfRockTile_21
       rect:
         serializedVersion: 2
         x: 32
@@ -554,20 +566,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 2, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f2b76c556c3114eb2ed7e61f813334
-      internalID: 1756684624
+      spriteID: f7640bf5d78cb764f8ab9d017581d912
+      internalID: 113851058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 9
+      name: cave_halfRockTile_22
       rect:
         serializedVersion: 2
         x: 48
@@ -575,20 +587,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 2, z: 2, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49feb6173507ba843aabd8152b4bcbec
-      internalID: -1204863590
+      spriteID: c26370015b6685c449c3fedee9ccc494
+      internalID: 1689513075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vert_bot
+      name: cave_halfRockTile_23
       rect:
         serializedVersion: 2
         x: 64
@@ -596,20 +608,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 2, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0d8915f0232a554f99282ad1c984be1
-      internalID: 294920099
+      spriteID: f0a778e3f070cec49b5f48584c4444a8
+      internalID: -474028443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_24
+      name: cave_halfRockTile_24
       rect:
         serializedVersion: 2
         x: 80
@@ -617,20 +629,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4972eed09d2b934d97ce52eee6b8731
-      internalID: -1154032616
+      spriteID: 71e5d9d26058be0408fbb2e6ac6fc3c3
+      internalID: 583038079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_25
+      name: cave_halfRockTile_25
       rect:
         serializedVersion: 2
         x: 96
@@ -638,20 +650,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bd50055fe4b63f47b005e4455f21af4
-      internalID: 1126230994
+      spriteID: 0469496c2a25fe145a95751cccca0cf5
+      internalID: -1190749921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_26
+      name: cave_halfRockTile_26
       rect:
         serializedVersion: 2
         x: 112
@@ -659,20 +671,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b34a25f3e40ad64c8bd7956c299ef0c
-      internalID: -2048544087
+      spriteID: e72e591bc8ac559428a68cabd33a8a1c
+      internalID: 1517094109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_27
+      name: cave_halfRockTile_27
       rect:
         serializedVersion: 2
         x: 128
@@ -680,20 +692,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5952d600792af234382d8349db553baa
-      internalID: 1256172500
+      spriteID: 17559b3e56615e24e8c445191d87f15f
+      internalID: -2074237009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_28
+      name: cave_halfRockTile_28
       rect:
         serializedVersion: 2
         x: 144
@@ -701,20 +713,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17a482d39cc84348b554936248175c8
-      internalID: -418973616
+      spriteID: 4c0187016c9276b4e944125f03bc4212
+      internalID: -417363660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_29
+      name: cave_halfRockTile_29
       rect:
         serializedVersion: 2
         x: 160
@@ -722,20 +734,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b9a26342fc5ce24b8d612df4bb4c28c
-      internalID: 844382915
+      spriteID: 797255c09c195d242a85adead53c3282
+      internalID: 1066656677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_30
+      name: cave_halfRockTile_30
       rect:
         serializedVersion: 2
         x: 176
@@ -743,20 +755,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2676451bb188d1b418712b686d4c8aa6
-      internalID: 206997674
+      spriteID: a9df09da98fc71f4c9345e4b493f467c
+      internalID: -629900621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hori_left
+      name: cave_halfRockTile_31
       rect:
         serializedVersion: 2
         x: 16
@@ -764,20 +776,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 0, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bb0efa12f12f644d889be97c4a2f3b5
-      internalID: -552145040
+      spriteID: d3851a2781ca2e4429d8f1c19ad631e8
+      internalID: -1911034822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hori_mid
+      name: cave_halfRockTile_32
       rect:
         serializedVersion: 2
         x: 32
@@ -785,20 +797,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 2, z: 0, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b894ed9d9de5769469e37ffec238c2f5
-      internalID: -1561358332
+      spriteID: 8d4503f1edaaf904695ae1f8c6f1303f
+      internalID: -788096396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hori_right
+      name: cave_halfRockTile_33
       rect:
         serializedVersion: 2
         x: 48
@@ -806,20 +818,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 2, z: 2, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d0888484bdc7734682e511bfae84bad
-      internalID: -1280655557
+      spriteID: 6b5d4503f5ddc7b48b59e7fccf26658a
+      internalID: -864062035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nothign
+      name: cave_halfRockTile_34
       rect:
         serializedVersion: 2
         x: 64
@@ -827,20 +839,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37f6f7d0182282a42a45405529650422
-      internalID: 1824951518
+      spriteID: 772b95594a59df942be05e63ce71544a
+      internalID: 1862271345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_35
+      name: cave_halfRockTile_35
       rect:
         serializedVersion: 2
         x: 80
@@ -848,20 +860,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dbb01b7fbedee243a19349a5abbf824
-      internalID: 532229833
+      spriteID: f7649f8efb7c64646a3397a19c090029
+      internalID: 734265083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_36
+      name: cave_halfRockTile_36
       rect:
         serializedVersion: 2
         x: 96
@@ -869,20 +881,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba14d4b1f56d9fd458455df105335fed
-      internalID: 2071807073
+      spriteID: af197236f840d124f8c4e18c15325a17
+      internalID: 658795343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_37
+      name: cave_halfRockTile_37
       rect:
         serializedVersion: 2
         x: 112
@@ -890,20 +902,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfa08b7db844ae041847aecf5687d005
-      internalID: -1411289929
+      spriteID: 6aceb6ce5129a5b40b411744c6b65130
+      internalID: -1427152081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_38
+      name: cave_halfRockTile_38
       rect:
         serializedVersion: 2
         x: 128
@@ -911,20 +923,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 641108e08916f2645b05904adef0a13c
-      internalID: 1258992834
+      spriteID: 961b8d8ffa67db34db8bf7bd4836be8e
+      internalID: -1213424569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_39
+      name: cave_halfRockTile_39
       rect:
         serializedVersion: 2
         x: 144
@@ -932,20 +944,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26df31da2f4e4e418eb019176b2cc0a
-      internalID: -474938738
+      spriteID: 2eb4fad5cb444c94ba777e69796cc9a5
+      internalID: 1779807350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_40
+      name: cave_halfRockTile_40
       rect:
         serializedVersion: 2
         x: 160
@@ -953,20 +965,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a39fb541932acfe489de0d32590fe80f
-      internalID: 1789257086
+      spriteID: dda80249f4c4e574b99fad85c88d5e74
+      internalID: 1195090861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_41
+      name: cave_halfRockTile_41
       rect:
         serializedVersion: 2
         x: 176
@@ -974,20 +986,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5ae5963b5134445840bd8e547327f1
-      internalID: -1805013101
+      spriteID: 729cbd7d1b43d1b48bbdcdba08b4ce07
+      internalID: 381467442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_42
+      name: cave_halfRockTile_42
       rect:
         serializedVersion: 2
         x: 80
@@ -995,20 +1007,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1f86b4bdc1cdf64eb8bb9b185a0d20c
-      internalID: 1424598026
+      spriteID: 3dfb7d12ccee0344a93637c4294db61d
+      internalID: -2027506317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_43
+      name: cave_halfRockTile_43
       rect:
         serializedVersion: 2
         x: 96
@@ -1016,20 +1028,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a000835b64bbd4c458fe89bf38c45e5f
-      internalID: -1706788930
+      spriteID: 20cd8a051030d024da89ad8f3f88606b
+      internalID: -566656711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_44
+      name: cave_halfRockTile_44
       rect:
         serializedVersion: 2
         x: 112
@@ -1037,20 +1049,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78af3ba2db859784384edc1efb71465b
-      internalID: -1553688714
+      spriteID: 5c5757134f75654418c5da6477a6191c
+      internalID: -1206367161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_45
+      name: cave_halfRockTile_45
       rect:
         serializedVersion: 2
         x: 128
@@ -1058,20 +1070,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fb1469c5ae5fbc4baa2890b6a4f113a
-      internalID: 441996296
+      spriteID: bf9b6c5dee5cd874aaad4247d010770d
+      internalID: -1863387706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave_fullRockTile_46
+      name: cave_halfRockTile_46
       rect:
         serializedVersion: 2
         x: 144
@@ -1079,14 +1091,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b925583b7a25cb479c4bb67c2273ccf
-      internalID: 500838525
+      spriteID: fa1c5dadea67a1e46b7fd01a7bdd02d2
+      internalID: 1830143716
       vertices: []
       indices: 
       edges: []
@@ -1102,53 +1114,53 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cave_fullRockTile_39: -474938738
-      3: -328345112
-      cave_fullRockTile_24: -1154032616
-      vert_mid: -565223889
-      cave_fullRockTile_41: -1805013101
-      cave_fullRockTile_27: 1256172500
-      cave_fullRockTile_25: 1126230994
-      cave_fullRockTile_46: 500838525
-      cave_fullRockTile_38: 1258992834
-      cave_fullRockTile_37: -1411289929
-      nothign: 1824951518
-      cave_fullRockTile_36: 2071807073
-      6: 1967913024
-      cave_fullRockTile_19: 766531233
-      hori_mid: -1561358332
-      cave_fullRockTile_16: -184031657
-      cave_fullRockTile_26: -2048544087
-      cave_fullRockTile_5: 426723354
-      cave_fullRockTile_43: -1706788930
-      5: -489278408
-      vert_bot: 294920099
-      cave_fullRockTile_6: 593245484
-      cave_fullRockTile_29: 844382915
-      cave_fullRockTile_8: 852606104
-      hori_left: -552145040
-      cave_fullRockTile_7: 587641550
-      cave_fullRockTile_14: -1783378075
-      8: 1756684624
-      cave_fullRockTile_45: 441996296
-      hori_right: -1280655557
-      vert_top: 1306932485
-      cave_fullRockTile_35: 532229833
-      cave_fullRockTile_17: -1440356412
-      cave_fullRockTile_44: -1553688714
-      2: -1246550877
-      9: -1204863590
-      4: 1266203168
-      cave_fullRockTile_30: 206997674
-      cave_fullRockTile_42: 1424598026
-      cave_fullRockTile_9: -1097696459
-      cave_fullRockTile_15: 1583583
-      1: -343037234
-      7: -1840261913
-      cave_fullRockTile_18: 1684050899
-      cave_fullRockTile_4: 1531850409
-      cave_fullRockTile_28: -418973616
-      cave_fullRockTile_40: 1789257086
+      cave_halfRockTile_18: 509205031
+      cave_halfRockTile_33: -864062035
+      cave_halfRockTile_44: -1206367161
+      cave_halfRockTile_21: 113851058
+      cave_halfRockTile_30: -629900621
+      cave_halfRockTile_3: 1552905499
+      cave_halfRockTile_14: -484046175
+      cave_halfRockTile_13: -9569551
+      cave_halfRockTile_27: -2074237009
+      cave_halfRockTile_38: -1213424569
+      cave_halfRockTile_40: 1195090861
+      cave_halfRockTile_37: -1427152081
+      cave_halfRockTile_28: -417363660
+      cave_halfRockTile_4: -1416623623
+      cave_halfRockTile_25: -1190749921
+      cave_halfRockTile_36: 658795343
+      cave_halfRockTile_11: -896721327
+      cave_halfRockTile_29: 1066656677
+      cave_halfRockTile_46: 1830143716
+      cave_halfRockTile_23: -474028443
+      cave_halfRockTile_5: 1033690246
+      cave_halfRockTile_10: -1084092311
+      cave_halfRockTile_15: 1159439197
+      cave_halfRockTile_6: 1887225370
+      cave_halfRockTile_24: 583038079
+      cave_halfRockTile_43: -566656711
+      cave_halfRockTile_42: -2027506317
+      cave_halfRockTile_45: -1863387706
+      cave_halfRockTile_2: -1014997827
+      cave_halfRockTile_35: 734265083
+      cave_halfRockTile_16: -1890390259
+      cave_halfRockTile_39: 1779807350
+      cave_halfRockTile_7: -1737505295
+      cave_halfRockTile_31: -1911034822
+      cave_halfRockTile_32: -788096396
+      cave_halfRockTile_8: -246252342
+      cave_halfRockTile_12: -2011312521
+      cave_halfRockTile_20: 1553006479
+      cave_halfRockTile_9: -1930934792
+      cave_halfRockTile_41: 381467442
+      cave_halfRockTile_17: -631631583
+      cave_halfRockTile_26: 1517094109
+      cave_halfRockTile_22: 1689513075
+      cave_halfRockTile_34: 1862271345
+      cave_halfRockTile_19: -926648115
+      cave_halfRockTile_0: -1075397463
+      cave_halfRockTile_1: -648986770
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
