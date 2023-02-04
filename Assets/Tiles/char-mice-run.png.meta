@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de48c45b8d791274c959af9fbfc44b34
+guid: c9b05aa1017918b4d8c03e92f7b5c69c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,29 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cave-rocksrooted_0
+      name: char-mice-run_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 64
+        x: 3
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4486680f859362241983ab27f5a3fde3
-      internalID: -2064307690
+      spriteID: 6994d7ae7f7505a4d9d09059e7140b64
+      internalID: -1737357866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave-rocksrooted_1
+      name: char-mice-run_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 64
+        x: 29
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b08cf8ce3e9f3e498cf496ef9112263
-      internalID: -303731833
+      spriteID: a0d5c5fc4b04d0647b985f5e2ae6e1a7
+      internalID: 34077015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave-rocksrooted_2
+      name: char-mice-run_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 64
+        x: 55
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15fe9532533a1d45879c947118484a9
-      internalID: 2089453782
+      spriteID: b4cab28906d391b468a2a372656ca835
+      internalID: 2146467319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave-rocksrooted_3
+      name: char-mice-run_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 64
+        x: 81
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 332282e10bdca2d42a20699c65a22aa1
-      internalID: -1841183661
+      spriteID: ea2a64e49dbf5be45b9e47d36baaefe5
+      internalID: 1196463560
       vertices: []
       indices: 
       edges: []
@@ -211,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cave-rocksrooted_0: -2064307690
-      cave-rocksrooted_2: 2089453782
-      cave-rocksrooted_1: -303731833
-      cave-rocksrooted_3: -1841183661
+      char-mice-run_3: 1196463560
+      char-mice-run_2: 2146467319
+      char-mice-run_1: 34077015
+      char-mice-run_0: -1737357866
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

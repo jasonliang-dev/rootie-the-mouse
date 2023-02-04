@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de48c45b8d791274c959af9fbfc44b34
+guid: c65cadbe3bc8d5749aa1a8b94aef0881
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,29 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cave-rocksrooted_0
+      name: char-mice-Jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 64
+        x: 2
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4486680f859362241983ab27f5a3fde3
-      internalID: -2064307690
+      spriteID: a35170a78bdd4a946a877bbcbd27ebd6
+      internalID: 1509650127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave-rocksrooted_1
+      name: char-mice-Jump_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 64
+        x: 28
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b08cf8ce3e9f3e498cf496ef9112263
-      internalID: -303731833
+      spriteID: fb24aed6d4c9b6748bf1f2739fa9ebe7
+      internalID: 19541183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave-rocksrooted_2
+      name: char-mice-Jump_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 64
+        x: 54
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15fe9532533a1d45879c947118484a9
-      internalID: 2089453782
+      spriteID: 4ff8c5157e0db5849a674564817db070
+      internalID: 259146030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave-rocksrooted_3
+      name: char-mice-Jump_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 64
+        x: 80
+        y: 4
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +182,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 332282e10bdca2d42a20699c65a22aa1
-      internalID: -1841183661
+      spriteID: 448e33330967a45428f289fb7a8e6d70
+      internalID: -376557127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char-mice-Jump_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 4
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9e1551fe9148840819cb2d75ef21cc
+      internalID: 388426031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: char-mice-Jump_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72eb040fc79ed154aa5d209d8301dfba
+      internalID: -887481595
       vertices: []
       indices: 
       edges: []
@@ -211,10 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cave-rocksrooted_0: -2064307690
-      cave-rocksrooted_2: 2089453782
-      cave-rocksrooted_1: -303731833
-      cave-rocksrooted_3: -1841183661
+      char-mice-Jump_1: 19541183
+      char-mice-Jump_3: -376557127
+      char-mice-Jump_0: 1509650127
+      char-mice-Jump_5: -887481595
+      char-mice-Jump_2: 259146030
+      char-mice-Jump_4: 388426031
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
