@@ -6,36 +6,112 @@ public class Player : MonoBehaviour
 {
     public float m_speed = 1.0f;
     public float m_jumpVel = 10.0f;
+    public float m_groundDist = 0.1f;
 
     private Rigidbody2D m_rb;
+    private Animator m_anim;
+    private BoxCollider2D m_box;
+
     private Vector3 m_vel;
     private bool m_jumpQueued = false;
+    private bool m_shouldStopJump = false;
 
     void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
-        m_jumpQueued = false;
+        m_anim = GetComponent<Animator>();
+        m_box = GetComponent<BoxCollider2D>();
+
+        StartCoroutine(Idle());
     }
 
-    void Update()
+    IEnumerator Idle()
     {
-        var x = Input.GetAxis("Horizontal");
-        // var y = Input.GetAxis("Vertical");
+        Debug.Log("Enter Idle");
+        m_anim.Play("Base Layer.PlayerIdle");
 
-        if (x > 0)
+        while (true)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            var x = Input.GetAxis("Horizontal");
+            if (x != 0)
+            {
+                yield return StartCoroutine(Walk());
+                m_anim.Play("Base Layer.PlayerIdle");
+            }
+
+            if (Input.GetKeyDown("space"))
+            {
+                yield return StartCoroutine(Jump());
+                m_anim.Play("Base Layer.PlayerIdle");
+            }
+
+            yield return null;
         }
-        else if (x < 0)
+    }
+
+    IEnumerator Walk()
+    {
+        Debug.Log("Enter Walk");
+        m_anim.Play("Base Layer.PlayerWalk");
+
+        while (true)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            var x = Input.GetAxis("Horizontal");
+
+            if (x > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (x < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                m_vel = new Vector3(0, 0, 0);
+                yield break;
+            }
+
+            m_vel = new Vector3(x, 0, 0);
+
+            if (Input.GetKeyDown("space"))
+            {
+                yield return StartCoroutine(Jump());
+                m_anim.Play("Base Layer.PlayerWalk");
+            }
+
+            yield return null;
         }
+    }
 
-        m_vel = new Vector3(x, 0, 0);
+    IEnumerator Jump()
+    {
+        Debug.Log("Enter Jump");
+        m_anim.Play("Base Layer.PlayerJump");
+        m_jumpQueued = true;
+        m_shouldStopJump = false;
 
-        if (Input.GetKeyDown("space"))
+        while (true)
         {
-            m_jumpQueued = true;
+            var x = Input.GetAxis("Horizontal");
+
+            if (x > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (x < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+
+            m_vel = new Vector3(x, 0, 0);
+
+            if (m_shouldStopJump)
+            {
+                yield break;
+            }
+
+            yield return null;
         }
     }
 
@@ -53,5 +129,10 @@ public class Player : MonoBehaviour
         }
 
         m_rb.velocity = (m_vel * m_speed) + new Vector3(0, y, 0);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        m_shouldStopJump = true;
     }
 }
