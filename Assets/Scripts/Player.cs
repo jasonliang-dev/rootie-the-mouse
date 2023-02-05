@@ -8,10 +8,13 @@ public class Player : MonoBehaviour
 
     public float m_speed = 1.0f;
     public float m_jumpVel = 10.0f;
+    public float m_doubleJumpVel = 8.0f;
     public float m_groundDist = 0.1f;
 
     [HideInInspector]
     public bool m_hasFire = false;
+    [HideInInspector]
+    public bool m_hasAir = false;
 
     private Rigidbody2D m_rb;
     private Animator m_anim;
@@ -19,6 +22,8 @@ public class Player : MonoBehaviour
 
     private Vector3 m_vel;
     private bool m_jumpQueued = false;
+    private bool m_doubleJumpQueued = false;
+    private bool m_doubleJumpThisTime = false;
     private bool m_shouldStopJump = false;
     private float m_lastXDirection = 1.0f;
 
@@ -102,6 +107,7 @@ public class Player : MonoBehaviour
         m_anim.Play("Base Layer.PlayerJump");
         m_jumpQueued = true;
         m_shouldStopJump = false;
+        m_doubleJumpThisTime = false;
 
         while (true)
         {
@@ -125,6 +131,13 @@ public class Player : MonoBehaviour
                 yield break;
             }
 
+            if (m_hasAir && Input.GetKeyDown("space") && !m_jumpQueued && !m_doubleJumpThisTime)
+            {
+                m_anim.Play("Base Layer.PlayerJump", 0, 0);
+                m_doubleJumpQueued = true;
+                m_doubleJumpThisTime = true;
+            }
+
             yield return null;
         }
     }
@@ -136,6 +149,11 @@ public class Player : MonoBehaviour
         {
             m_jumpQueued = false;
             y = m_jumpVel;
+        }
+        else if (m_doubleJumpQueued)
+        {
+            m_doubleJumpQueued = false;
+            y = m_doubleJumpVel;
         }
         else
         {

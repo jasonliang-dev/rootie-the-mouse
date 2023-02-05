@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fire : MonoBehaviour
+public class Air : MonoBehaviour
 {
     public Player m_player;
 
@@ -10,9 +10,9 @@ public class Fire : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (!m_player.m_hasFire)
+            if (!m_player.m_hasAir)
             {
-                m_player.m_hasFire = true;
+                m_player.m_hasAir = true;
             }
         }
     }
