@@ -6,6 +6,10 @@ public class Player : MonoBehaviour
 {
     public GameObject m_flame;
     public GameObject m_spell;
+    public AudioClip m_fireSound;
+    public AudioClip m_airSound;
+    public AudioClip m_waterSound;
+    public AudioSource m_audioSource;
 
     public float m_speed = 1.0f;
     public float m_jumpVel = 10.0f;
@@ -62,6 +66,7 @@ public class Player : MonoBehaviour
 
             if (m_fire != null && Input.GetKeyDown("e"))
             {
+                m_audioSource.PlayOneShot(m_fireSound);
                 m_fire = m_fire.Use();
                 var f = Instantiate(m_flame, transform.position, Quaternion.identity);
                 var rb = f.GetComponent<Rigidbody2D>();
@@ -70,6 +75,7 @@ public class Player : MonoBehaviour
 
             if (m_water != null && m_greenRoot != null && Input.GetKeyDown("f"))
             {
+                m_audioSource.PlayOneShot(m_waterSound);
                 m_water = m_water.Use();
                 var s = Instantiate(m_spell, transform.position, Quaternion.identity);
                 var script = s.GetComponent<Spell>();
@@ -170,6 +176,7 @@ public class Player : MonoBehaviour
         }
         else if (m_doubleJumpQueued)
         {
+            m_audioSource.PlayOneShot(m_airSound);
             m_doubleJumpQueued = false;
             y = m_doubleJumpVel;
         }
