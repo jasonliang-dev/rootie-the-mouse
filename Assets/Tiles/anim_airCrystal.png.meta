@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28f4a8929571f6548b3a8a71d35e2661
+guid: e1d4677e02b39314b9207292fede08ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: anim_waterCrystal_0
+      name: air0
       rect:
         serializedVersion: 2
         x: 3
@@ -113,20 +113,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69cef7bbdc63dd04f8d0341f41c70539
-      internalID: -162943540
+      spriteID: e289d2b94aba3a5458a830c08d3e4b7f
+      internalID: -643637797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_waterCrystal_1
+      name: air1
       rect:
         serializedVersion: 2
         x: 21
@@ -134,20 +134,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a723a0941c2d604aa856412b3b95494
-      internalID: -1734422643
+      spriteID: f851121c007e69e4b99381f2270662cc
+      internalID: -513328962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_waterCrystal_2
+      name: air2
       rect:
         serializedVersion: 2
         x: 39
@@ -155,20 +155,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486b2f8c708b8d043988becacd5c9887
-      internalID: 753071336
+      spriteID: 9397eb72589ee754e9f1f82f1802546f
+      internalID: -1632245401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_waterCrystal_3
+      name: air3
       rect:
         serializedVersion: 2
         x: 57
@@ -176,14 +176,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d328d7b6b4c28f54097150371964cdb5
-      internalID: 745511267
+      spriteID: 6860b5d4cc84efc489b985a93ec1b797
+      internalID: 46289017
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      anim_waterCrystal_2: 753071336
-      anim_waterCrystal_0: -162943540
-      anim_waterCrystal_1: -1734422643
-      anim_waterCrystal_3: 745511267
+      air3: 46289017
+      air0: -643637797
+      air2: -1632245401
+      air1: -513328962
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
