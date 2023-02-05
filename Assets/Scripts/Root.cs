@@ -16,7 +16,7 @@ public class Root : MonoBehaviour
     {
         var info = m_anim.GetCurrentAnimatorStateInfo(0);
         var finished = info.normalizedTime > 1.0f;
-        var isShrink = info.IsName("Base Layer.RootBigShrink");
+        var isShrink = info.IsName("Base Layer.RootBigDecay");
         if (m_shouldDie && finished && isShrink)
         {
             Destroy(gameObject);
@@ -27,7 +27,7 @@ public class Root : MonoBehaviour
     {
         if (collision.collider.tag == "Bullet")
         {
-            m_anim.Play("Base Layer.RootBigShrink");
+            m_anim.Play("Base Layer.RootBigDecay");
             m_shouldDie = true;
         }
     }
