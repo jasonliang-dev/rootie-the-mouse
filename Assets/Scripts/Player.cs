@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     public Powerup m_air;
     [HideInInspector]
     public Powerup m_water;
+    [HideInInspector]
+    public bool m_usedDoor;
 
     private Rigidbody2D m_rb;
     private Animator m_anim;
