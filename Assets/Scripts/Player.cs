@@ -11,12 +11,14 @@ public class Player : MonoBehaviour
     public float m_doubleJumpVel = 8.0f;
     public float m_groundDist = 0.1f;
 
+    public FadeAppear m_fireplace;
+
     [HideInInspector]
-    public bool m_hasFire = false;
+    public Powerup m_fire;
     [HideInInspector]
-    public bool m_hasAir = false;
+    public Powerup m_air;
     [HideInInspector]
-    public bool m_hasWater = false;
+    public Powerup m_water;
 
     private Rigidbody2D m_rb;
     private Animator m_anim;
@@ -57,8 +59,9 @@ public class Player : MonoBehaviour
                 m_anim.Play("Base Layer.PlayerIdle");
             }
 
-            if (m_hasFire && Input.GetKeyDown("e"))
+            if (m_fire != null && Input.GetKeyDown("e"))
             {
+                m_fire = m_fire.Use();
                 var f = Instantiate(m_flame, transform.position, Quaternion.identity);
                 var rb = f.GetComponent<Rigidbody2D>();
                 rb.velocity = new Vector3(m_lastXDirection * 12, 0, 0);
@@ -133,8 +136,9 @@ public class Player : MonoBehaviour
                 yield break;
             }
 
-            if (m_hasAir && Input.GetKeyDown("space") && !m_jumpQueued && !m_doubleJumpThisTime)
+            if (m_air != null && Input.GetKeyDown("space") && !m_jumpQueued && !m_doubleJumpThisTime)
             {
+                m_air = m_air.Use();
                 m_anim.Play("Base Layer.PlayerJump", 0, 0);
                 m_doubleJumpQueued = true;
                 m_doubleJumpThisTime = true;
