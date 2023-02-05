@@ -52,7 +52,6 @@ public class Powerup : MonoBehaviour
 
         if (other.tag == "Player")
         {
-            m_following = true;
             Invoke(m_action, 0);
         }
     }
@@ -61,6 +60,7 @@ public class Powerup : MonoBehaviour
     {
         if (m_player.m_fire == null)
         {
+            m_following = true;
             m_player.m_fire = this;
 
             if (!m_invoked)
@@ -75,6 +75,7 @@ public class Powerup : MonoBehaviour
     {
         if (!m_player.m_water)
         {
+            m_following = true;
             m_player.m_water = this;
 
             if (!m_invoked)
@@ -89,6 +90,7 @@ public class Powerup : MonoBehaviour
     {
         if (!m_player.m_air)
         {
+            m_following = true;
             m_player.m_air = this;
 
             if (!m_invoked)

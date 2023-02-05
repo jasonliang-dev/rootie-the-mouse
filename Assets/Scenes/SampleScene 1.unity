@@ -795,7 +795,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.0748997
+  orthographic size: 5.970386
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -80338,15 +80338,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_flame: {fileID: 0}
+  m_spell: {fileID: 0}
   m_speed: 6
   m_jumpVel: 13
   m_doubleJumpVel: 8
   m_groundDist: 0.1
-  m_fireplace: {fileID: 0}
   m_fire: {fileID: 0}
   m_air: {fileID: 0}
   m_water: {fileID: 0}
-  m_usedDoor: 0
+  m_greenRoot: {fileID: 0}
 --- !u!50 &1034702061
 Rigidbody2D:
   serializedVersion: 4
@@ -81132,15 +81132,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_flame: {fileID: 2371510418267365259, guid: 3e1b792fefb6d8649a09af85d44a9c61, type: 3}
+  m_spell: {fileID: 0}
   m_speed: 6
   m_jumpVel: 13
   m_doubleJumpVel: 10
   m_groundDist: 1
-  m_fireplace: {fileID: 0}
   m_fire: {fileID: 0}
   m_air: {fileID: 0}
   m_water: {fileID: 0}
-  m_usedDoor: 0
+  m_greenRoot: {fileID: 0}
 --- !u!70 &1315279078
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
