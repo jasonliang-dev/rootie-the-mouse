@@ -7,7 +7,7 @@ public class door : MonoBehaviour
     public Transform m_teleportTarget;
     public GameObject m_player;
 
-    void OnTriggerEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
