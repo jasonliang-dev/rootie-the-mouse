@@ -68,9 +68,16 @@ public class Player : MonoBehaviour
             {
                 m_audioSource.PlayOneShot(m_fireSound);
                 m_fire = m_fire.Use();
+
                 var f = Instantiate(m_flame, transform.position, Quaternion.identity);
                 var rb = f.GetComponent<Rigidbody2D>();
+
                 rb.velocity = new Vector3(m_lastXDirection * 12, 0, 0);
+
+                if (m_lastXDirection < 0)
+                {
+                    f.transform.rotation = Quaternion.Euler(0, 0, 180);
+                }
             }
 
             if (m_water != null && m_greenRoot != null && Input.GetKeyDown("f"))
