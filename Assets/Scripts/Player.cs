@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject m_flame;
+
     public float m_speed = 1.0f;
     public float m_jumpVel = 10.0f;
     public float m_groundDist = 0.1f;
+
+    [HideInInspector]
+    public bool m_hasFire = false;
 
     private Rigidbody2D m_rb;
     private Animator m_anim;
@@ -15,6 +20,7 @@ public class Player : MonoBehaviour
     private Vector3 m_vel;
     private bool m_jumpQueued = false;
     private bool m_shouldStopJump = false;
+    private float m_lastXDirection = 1.0f;
 
     void Start()
     {
@@ -27,7 +33,6 @@ public class Player : MonoBehaviour
 
     IEnumerator Idle()
     {
-        Debug.Log("Enter Idle");
         m_anim.Play("Base Layer.PlayerIdle");
 
         while (true)
@@ -45,13 +50,19 @@ public class Player : MonoBehaviour
                 m_anim.Play("Base Layer.PlayerIdle");
             }
 
+            if (m_hasFire && Input.GetKeyDown("e"))
+            {
+                var f = Instantiate(m_flame, transform.position, Quaternion.identity);
+                var rb = f.GetComponent<Rigidbody2D>();
+                rb.velocity = new Vector3(m_lastXDirection * 12, 0, 0);
+            }
+
             yield return null;
         }
     }
 
     IEnumerator Walk()
     {
-        Debug.Log("Enter Walk");
         m_anim.Play("Base Layer.PlayerWalk");
 
         while (true)
@@ -60,10 +71,12 @@ public class Player : MonoBehaviour
 
             if (x > 0)
             {
+                m_lastXDirection = 1.0f;
                 transform.localScale = new Vector3(1, 1, 1);
             }
             else if (x < 0)
             {
+                m_lastXDirection = -1.0f;
                 transform.localScale = new Vector3(-1, 1, 1);
             }
             else
@@ -86,7 +99,6 @@ public class Player : MonoBehaviour
 
     IEnumerator Jump()
     {
-        Debug.Log("Enter Jump");
         m_anim.Play("Base Layer.PlayerJump");
         m_jumpQueued = true;
         m_shouldStopJump = false;
@@ -97,10 +109,12 @@ public class Player : MonoBehaviour
 
             if (x > 0)
             {
+                m_lastXDirection = 1.0f;
                 transform.localScale = new Vector3(1, 1, 1);
             }
             else if (x < 0)
             {
+                m_lastXDirection = -1.0f;
                 transform.localScale = new Vector3(-1, 1, 1);
             }
 
@@ -133,6 +147,9 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        m_shouldStopJump = true;
+        if (other.tag == "Map")
+        {
+            m_shouldStopJump = true;
+        }
     }
 }

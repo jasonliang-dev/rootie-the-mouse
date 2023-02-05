@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Root : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator m_anim;
+    private bool m_shouldDie = false;
+
     void Start()
     {
-        
+        m_anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        var info = m_anim.GetCurrentAnimatorStateInfo(0);
+        var finished = info.normalizedTime > 1.0f;
+        var isShrink = info.IsName("Base Layer.RootBigShrink");
+        if (m_shouldDie && finished && isShrink)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Bullet")
+        {
+            m_anim.Play("Base Layer.RootBigShrink");
+            m_shouldDie = true;
+        }
     }
 }
