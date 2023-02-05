@@ -16,8 +16,14 @@ public class Powerup : MonoBehaviour
 
     public Powerup Use()
     {
-        m_following = false;
+        StartCoroutine(StupidStuff());
         return null;
+    }
+
+    IEnumerator StupidStuff()
+    {
+        yield return new WaitForSeconds(0.1f);
+        m_following = false;
     }
 
     void Start()

@@ -5,13 +5,12 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject m_flame;
+    public GameObject m_spell;
 
     public float m_speed = 1.0f;
     public float m_jumpVel = 10.0f;
     public float m_doubleJumpVel = 8.0f;
     public float m_groundDist = 0.1f;
-
-    public FadeAppear m_fireplace;
 
     [HideInInspector]
     public Powerup m_fire;
@@ -20,7 +19,7 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public Powerup m_water;
     [HideInInspector]
-    public bool m_usedDoor;
+    public GreenRoot m_greenRoot;
 
     private Rigidbody2D m_rb;
     private Animator m_anim;
@@ -67,6 +66,17 @@ public class Player : MonoBehaviour
                 var f = Instantiate(m_flame, transform.position, Quaternion.identity);
                 var rb = f.GetComponent<Rigidbody2D>();
                 rb.velocity = new Vector3(m_lastXDirection * 12, 0, 0);
+            }
+
+            if (m_water != null && m_greenRoot != null && Input.GetKeyDown("f"))
+            {
+                m_water = m_water.Use();
+                var s = Instantiate(m_spell, transform.position, Quaternion.identity);
+                var script = s.GetComponent<Spell>();
+                script.m_target = m_greenRoot.gameObject;
+                m_greenRoot.m_grew = true;
+
+                m_greenRoot = null;
             }
 
             yield return null;
@@ -173,7 +183,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Map")
+        if (other.tag == "Map" || other.tag == "GreenRoot")
         {
             m_shouldStopJump = true;
         }
