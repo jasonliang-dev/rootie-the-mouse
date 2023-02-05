@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public bool m_hasFire = false;
     [HideInInspector]
     public bool m_hasAir = false;
+    [HideInInspector]
+    public bool m_hasWater = false;
 
     private Rigidbody2D m_rb;
     private Animator m_anim;
