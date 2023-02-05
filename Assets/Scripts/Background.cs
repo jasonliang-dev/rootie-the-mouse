@@ -6,7 +6,7 @@ public class Background : MonoBehaviour
 {
     public Transform m_camera;
 
-    void Update()
+    void LateUpdate()
     {
         var x = m_camera.position.x;
         var y = m_camera.position.y;
