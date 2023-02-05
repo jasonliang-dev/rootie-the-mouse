@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7944304068500822249}
   - component: {fileID: -8517144570845647293}
+  - component: {fileID: 6309114020544821324}
   m_Layer: 0
-  m_Name: TeleportTarget
+  m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,3 +85,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6309114020544821324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7300081947057365315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c0f200618c2d34987ef735b3b91892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_teleportTarget: {fileID: 5153724458268224367, guid: f7a1d66c1d573404d9a4ff937295ca39, type: 3}
+  m_player: {fileID: 0}

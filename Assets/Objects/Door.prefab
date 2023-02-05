@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5153724458268224367}
   - component: {fileID: 7586231188175811860}
+  - component: {fileID: 5183787204532076230}
   m_Layer: 0
   m_Name: Door
   m_TagString: Map
@@ -84,3 +85,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5183787204532076230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747101560470948285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c0f200618c2d34987ef735b3b91892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_teleportTarget: {fileID: 7944304068500822249, guid: 9fcd89fa6f80a414e8af12da6a96e6aa, type: 3}
+  m_player: {fileID: 0}
